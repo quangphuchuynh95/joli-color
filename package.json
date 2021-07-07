@@ -1,0 +1,30 @@
+{
+  "version": "0.0.2",
+  "name": "joli-color",
+  "license": "MIT",
+  "keywords": ["color", "rgb", "hsl", "hex", "convert"],
+  "files": [
+    "dist", "lib"
+  ],
+  "main": "./dist/my-lib.umd.js",
+  "module": "./dist/my-lib.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/my-lib.es.js",
+      "require": "./dist/my-lib.umd.js"
+    },
+    "./": "./li/"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "^4.3.2",
+    "vite": "^2.4.0"
+  },
+  "dependencies": {
+    "@types/node": "^16.0.0"
+  }
+}
